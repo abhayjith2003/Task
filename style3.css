@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    font-family: Arial, sans-serif;
+}
+
+
+.layout {
+    height: 100vh;
+    display: grid;
+
+    grid-template-rows: 60px 1fr 50px;
+    grid-template-columns: 240px 1fr;
+
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background: #0b1220;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #1e293b;
+    color: white;
+    padding: 15px;
+}
+
+.content {
+    grid-area: content;
+    background: #334155;
+    color: white;
+    padding: 15px;
+}
+
+.footer {
+    grid-area: footer;
+    background: #0b1220;
+    color: white;
+    padding: 15px;
+}
