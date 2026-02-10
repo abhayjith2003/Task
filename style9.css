@@ -1,0 +1,11 @@
+.container {
+  background-color: aqua;  
+  display: flex;
+  align-items: center;   /* vertical center */
+  height: 200px;         /* fixed height (already set in task) */
+}
+
+.item {
+  background: #e91e63;    /* pink background */
+  padding: 10px 16px;
+}

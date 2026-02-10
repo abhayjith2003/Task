@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0f172a;
+  padding: 40px;
+}
+
+/* Flex container */
+.container {
+  display: flex;
+  flex-wrap: wrap;      /* ⭐ KEY PROPERTY */
+  gap: 20px;
+}
+
+/* Gallery items */
+.item {
+  width: 220px;
+  height: 120px;
+  background: #a855f7;  /* purple blocks like screenshot */
+  border-radius: 6px;
+}
