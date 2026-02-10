@@ -1,0 +1,16 @@
+body{
+    margin: 10px;
+}
+.sizing-grid {
+  display: grid;
+  grid-template-columns: min-content max-content auto;
+  gap: 10px;
+  border: 1px solid #ccc;
+}
+div { 
+    background: #334155; 
+    color: white; 
+    padding: 10px; 
+    border: 1px solid white; 
+}
+
