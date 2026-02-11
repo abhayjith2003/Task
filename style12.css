@@ -1,0 +1,121 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: white;
+}
+
+/* ========== DASHBOARD LAYOUT ========== */
+.dashboard {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: 100vh;
+}
+
+/* ========== SIDEBAR ========== */
+.sidebar {
+    background: #000000;
+    padding: 1.5rem;
+    border-right: 1px solid #334155;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #3b82f6;
+}
+
+.menu-item {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    color: #94a3b8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background: #334155;
+    color: white;
+}
+
+/* ========== MAIN AREA ========== */
+.main-area {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-weight: 600;
+    border-bottom: 1px solid #1e293b;
+    background: #0f172a;
+}
+
+/* ========== STATS GRID ========== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.stat {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    color: #94a3b8;
+}
+
+.stat span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* ========== CONTENT PANEL ========== */
+.content-panel {
+    flex: 1;
+    background: #1e293b;
+    margin: 0 2rem 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #334155;
+}
+
+.list-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #334155;
+    color: #cbd5e1;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
