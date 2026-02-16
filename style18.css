@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: white;
+}
+
+/* MAIN CONTAINER */
+.container {
+    display: flex;
+    padding: 40px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background-color: #310a0a;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+
+/* MENU ITEMS */
+.menu-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #cbd5e1;
+}
+
+.menu-item:hover {
+    background-color: #334155;
+}
+
+.menu-item.active {
+    background-color: #1e6f48;
+    color: white;
+    border-left: 4px solid #f5f5f5;
+}
+
+/* CONTENT AREA */
+.content {
+    flex: 1;
+    background-color: #606060;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+/* HEADING */
+.content h2 {
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+.content label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cbd5e1;
+}
+
+/* INPUT FIELD */
+.content input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+    color: white;
+    outline: none;
+}
+
+/* INPUT FOCUS EFFECT */
+.content input:focus {
+    border-color: #00ff44;
+}
