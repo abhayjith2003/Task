@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background: #f4f6fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Footer */
+.custom-footer {
+    background: linear-gradient(135deg, #4b0082, #6a0dad);
+    padding: 60px 0;
+    color: white;
+}
+
+/* Headings */
+.custom-footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Links */
+.custom-footer ul li {
+    margin-bottom: 10px;
+}
+
+.custom-footer a {
+    text-decoration: none;
+    color: #e0d7ff;
+    transition: 0.3s;
+}
+
+.custom-footer a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+/* Input */
+.form-control {
+    border-radius: 8px 0 0 8px;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+/* Button */
+.subscribe-btn {
+    background: #ff6ec7;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background: #ff3ea5;
+}

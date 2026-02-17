@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.newsletter-card {
+    background: #334155;
+    padding: 40px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Simple Hover */
+.newsletter-card:hover {
+    background: #3b4a63;  /* Slightly lighter */
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #cbd5e1;
+}
+
+.close-btn:hover {
+    color: #ffffff;
+}
+
+/* Icon circle */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #475569;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+}
+
+/* Heading */
+.newsletter-card h2 {
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.newsletter-card p {
+    color: #e2e8f0;
+    font-size: 14px;
+}
+
+/* Input */
+.form-control {
+    background: #475569;
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: #cbd5e1;
+}
+
+.form-control:focus {
+    background: #52627a;
+    box-shadow: none;
+    color: white;
+}
+
+/* Button */
+.subscribe-btn {
+    background: #0ea5e9;
+    border: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.subscribe-btn:hover {
+    background: #0284c7;  /* Slightly darker */
+}
+
+/* Small text */
+small {
+    color: #cbd5e1 !important;
+}
