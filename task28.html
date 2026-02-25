@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <script src="script28.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: black;
+        }
+        .text input {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color:black;
+            background-color: white;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .main {
+            background-color: white;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div class="main">
+
+    <h2>Simple Calculator</h2>
+<div class="text">
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+</div>
+    <br><br>
+<div class="buttons">
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <button onclick="calculate('%')">%</button>
+</div>
+<div class="result">
+    <h3>Result: <span id="result">0</span></h3>
+</div>
+</div>
+</body>
+</html>
