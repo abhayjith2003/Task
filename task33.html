@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Star Rating</title>
+<style>
+    body{
+    font-family: Arial;
+    background:#000000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.rating-box{
+    background:#7fe9e5;
+    padding:40px;
+    border-radius:10px;
+    text-align:center;
+    width:400px;
+}
+
+h2{
+    color:white;
+}
+
+.stars{
+    margin:20px 0;
+}
+
+.star{
+    font-size:40px;
+    color: white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.star:hover{
+    color:gold;
+}
+
+.star.active{
+    color:gold;
+}
+
+#rating-text{
+    color:#ffffff;
+}
+</style>">
+</head>
+
+<body>
+
+<div class="rating-box">
+
+<h2>Rate this product</h2>
+
+<div class="stars">
+    <span class="star" data-value="1">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="5">&#9733;</span>
+</div>
+
+<p id="rating-text">Click to rate</p>
+
+</div>
+
+<script src="script33.js"></script>
+
+</body>
+</html>
